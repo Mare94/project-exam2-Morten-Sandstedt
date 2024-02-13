@@ -1,3 +1,80 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    background-color: blueviolet;
+    height: 7rem;
+}
+
+main {
+    padding: 5rem 0 15rem;
+}
+
+
+/*footer nav*/
+
+footer {
+    margin-top: auto;
+    background: orangered;
+    height: auto;
+    width: 100%;
+    padding-top: 5px;
+    color: white;
+} 
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    line-height: 1rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: auto;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+.logo h3 {
+    font-weight: 200;
+}
+
+.logo h3 span {
+    font-weight: 600;
+}
+
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+}
+.socials li {
+    margin: 0 10px;
+}
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color 150ms ease-in;
+}
+.socials a:hover {
+    color: aqua;
 }
