@@ -56,6 +56,9 @@ footer {
     font-weight: 600;
 }
 
+.logo-container {
+    margin-left: 30px;
+}
 
 .socials {
     list-style: none;
