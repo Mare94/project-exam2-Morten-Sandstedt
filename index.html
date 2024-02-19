@@ -49,23 +49,34 @@
     </nav>
 
     <main>
-        <div class="col-12">
-            <-----Pictures to be added----->
+        <div class="col-12 img-wrapper">
+            <img src="img/airbnb5.jpg" class="banner-img" alt="Mountains view from a cabin in the mountains">
         </div>
 
-        <div class="col-8">
-            <----- arrive / departure ----->
+        <div class="col-8 date-container">
+            <form id="date-field">
+                <label>
+                    Arrival <br/>
+                    <input type="date" name="arrival" value="Today" />
+                </label>
+
+                <label>
+                    Departue <br/>
+                    <input type="date" name="departure" data-value="7" value="After 7 days" />
+                </label>
+            </form>
+
         </div>
 
         <div class="col-4">
             <----- calendar ----->
         </div>
 
-        <div>
+        <div class="col-12">
             <----- Pictures to be added ----->
         </div>
 
-        <div>
+        <div class="col-8">
             <----- Product API call ----->
         </div>
 
