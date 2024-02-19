@@ -16,6 +16,31 @@ main {
     padding: 5rem 0 15rem;
 }
 
+/* global img styles */
+
+.banner-img {
+    width: 101%;
+    height: 400px;
+    object-fit: inherit;
+}
+
+/* date field*/
+
+#date-field label {
+    margin-left: 1rem;
+}
+
+#date-field input {
+    padding: 0.5rem;
+}
+
+.date-container {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    background-color: green;
+}
 
 /*footer nav*/
 
