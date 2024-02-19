@@ -24,22 +24,34 @@ main {
     object-fit: inherit;
 }
 
+.img-wrapper {
+    padding-bottom: 2rem;
+}
+
 /* date field*/
 
 #date-field label {
     margin-left: 1rem;
+    background-color: green;
+    border-left: 5px;
 }
 
 #date-field input {
     padding: 0.5rem;
 }
 
+#date-field h3 {
+    font-size: 18px;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
 .date-container {
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 0.5rem;
-    padding-bottom: 1rem;
-    background-color: green;
+    padding-bottom: 3rem;
+
 }
 
 /*footer nav*/
