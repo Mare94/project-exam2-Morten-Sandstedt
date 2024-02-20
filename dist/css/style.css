@@ -12,6 +12,10 @@ body {
     height: 7rem;
 }
 
+.nav-color {
+    background-color: blueviolet;
+}
+
 main {
     padding: 5rem 0 15rem;
 }
