@@ -1,0 +1,46 @@
+h2 {
+    color: white;
+    text-shadow: 10%;
+}
+h1 {
+    padding-left: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.container{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+form{
+    padding: 2em;
+    background: whitesmoke;
+    border-radius: 1rem;
+}
+
+input{
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+label{
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-error{
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
