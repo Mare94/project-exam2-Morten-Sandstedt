@@ -44,3 +44,16 @@ label{
     font-size: 0.9rem;
     margin-top: 2px;
 }
+
+.form-success{
+    display: none;
+    color: green;
+    background-color: lightgreen;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 2px;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
