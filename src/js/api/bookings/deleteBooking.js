@@ -1,7 +1,7 @@
 import { authToken } from "../authToken.js";
 import { BASE_API_URL } from "../constant.js";
 
-const action = "/venues";
+const action = "/bookings";
 const method = "delete";
 
 export async function removePost(id) {
