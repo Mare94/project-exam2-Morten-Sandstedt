@@ -3,23 +3,23 @@ import { BASE_API_URL } from "../constant.js";
 
 const action = "/bookings"
 
-export async function readVenues() {
+export async function readBookings() {
 
-    const readVenuesUrl = `${BASE_API_URL}${action}`;
+    const readBookingsUrl = `${BASE_API_URL}${action}`;
 
-    const response = await authToken(readVenuesUrl);
+    const response = await authToken(readBookingsUrl);
     return await response.json();
 }
 
 
-export async function readVenue(id) {
+export async function readBooking(id) {
     if(!id){
         throw new Error("Venue requires an ID")
     }
 
-    const readVenueUrl = `${BASE_API_URL}${action}/${id}`;
+    const readBookingUrl = `${BASE_API_URL}${action}/${id}`;
 
-    const reponse = await authToken(readVenueUrl);
+    const reponse = await authToken(readBookingUrl);
     return await response.json();
 
 }
