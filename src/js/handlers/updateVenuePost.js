@@ -1,6 +1,6 @@
 import { readVenue, updateVenue } from "../api/venue/index.js";
 
-// handles the edit of posts
+// handles the edit of venues
 
 export async function SetUpdateVenueFormListener() {
     const form = document.querySelector("#updatePost");
