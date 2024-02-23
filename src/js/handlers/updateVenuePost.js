@@ -16,10 +16,11 @@ export async function SetUpdateVenueFormListener() {
 
         const post = await readVenue(id);
 
-        form.title.value = post.title;
-        form.body.value = post.body;
-        form.tags.value = post.tags;
+        form.name.value = post.name;
+        form.description.value = post.description;
+        form.price.value = post.price;
         form.media.value = post.media;
+        form.rating.value = post.rating;
 
         button.disabled = false;
 
