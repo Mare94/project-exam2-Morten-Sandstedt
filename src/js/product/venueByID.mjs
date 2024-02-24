@@ -45,11 +45,12 @@ function createHtml(data){
                     <img src="${data.data.media[0].url}" class="card-img-top" alt="${data.data.media[0].alt}">
                     <div class="card-body">
                     
-                    <p class="card-text">Price: ${data.data.price}</p>
+                    <p class="card-text">Price: ${data.data.price},- Kr</p>
                     <p class="card-text">Rating: ${data.data.rating}</p>
                     <p class="card-text">Max guests: ${data.data.maxGuests}</p>
-                    <p class="card-text">Location: ${data.data.location.address} ${data.data.location.city} ${data.data.location.country}</p>
+                    <p class="card-text">Bookings: ${data.data._count.bookings}</p>
                     <p class="card-text">${data.data.description}</p>
+                    <p class="card-text">Location: ${data.data.location.address} ${data.data.location.city} ${data.data.location.country}</p>
                     
                     </div>
                 </div>
