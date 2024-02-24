@@ -1,4 +1,4 @@
-import { BASE_API_URL } from "../api/constant.js";
+import { BASE_API_URL } from "../api/constant.mjs";
 
 const venueContainer = document.querySelector(".venue-container");
 
@@ -10,29 +10,36 @@ const apiUrl = "https://v2.api.noroff.dev/holidaze/venues";
 
 const corsEnabledUrl = "https://noroffcors.onrender.com/" + apiUrl
 
-console.log(corsEnabledUrl)
+console.log()
+console.log()
+console.log()
+console.log()
 
 async function getVenueData() {
 
     try {
 
-        const response = await fetch();
+        const response = await fetch(url);
 
         const data = await response.json();
 
         console.log(data);
 
-        for(let i = 0; i < 8; i++) {
+        for(let i = 0; i < 5; i++) {
+
+            console.log(data)
 
             venueContainer.innerHTML += `
             
-            <div class="card">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+            <div class="card text-center">
+                <div class="card" style="width: 26rem;">
+                    <img src="${data.data[i].media[i].url}" class="card-img-top" alt="${data.data[i].media[i].alt}">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">${data.data[i].name}</h5>
+                    <p class="card-text">Price: ${data.data[i].price}</p>
+                    <p class="card-text">Rating: ${data.data[i].rating}</p>
+                    <p class="card-text">${data.data[i].description}</p>
+                    <a href="product/product.html?${data.data[i].id}" class="btn btn-primary">See more</a>
                     </div>
                 </div>
             </div>
@@ -52,4 +59,4 @@ async function getVenueData() {
 
 }
 
-//getVenueData();
+getVenueData();

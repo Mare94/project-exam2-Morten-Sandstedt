@@ -7,6 +7,10 @@ body {
     background-color: whitesmoke;
 }
 
+main {
+    padding-left: 1rem;
+}
+
 .navbar {
     background-color: blueviolet;
     height: 7rem;
@@ -57,6 +61,16 @@ main {
     padding-bottom: 3rem;
 
 }
+
+/* Venue container */
+
+
+.venue-container {
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+
 
 /*footer nav*/
 
