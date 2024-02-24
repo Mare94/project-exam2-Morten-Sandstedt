@@ -3,7 +3,7 @@ import { readVenue, updateVenue } from "../api/venue/index.js";
 // handles the edit of venues
 
 export async function SetUpdateVenueFormListener() {
-    const form = document.querySelector("#updatePost");
+    const form = document.querySelector("#updateVenue");
 
     const url = new URL(location.href);
     const id = url.searchParams.get("id");
