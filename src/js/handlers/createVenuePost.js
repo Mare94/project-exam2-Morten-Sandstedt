@@ -1,4 +1,4 @@
-import { createPost } from "../api/venue";
+import { createPost } from "../api/venue/index.js";
 
 // handles the creation of posts
 
