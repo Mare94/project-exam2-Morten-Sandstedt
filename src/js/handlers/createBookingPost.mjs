@@ -1,9 +1,9 @@
-import { createPost } from "../api/venue/index.js";
+import { createPost } from "../api/bookings/index.mjs";
 
 // handles the creation of posts
 
-export function SetCreateVenueFormListener() {
-    const form = document.querySelector("#createVenue");
+export function SetCreateBookingFormListener() {
+    const form = document.querySelector("#createBooking");
 
     form.addEventListener("submit", (event) =>{
         event.preventDefault()

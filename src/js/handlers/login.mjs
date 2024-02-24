@@ -1,6 +1,6 @@
-import { login } from "../api/auth/login";
-import * as storage from "../storage/storage.js";
-import errorMessage from "../ui/common/displayMessage.js";
+import { login } from "../api/auth/login.mjs";
+import * as storage from "../storage/storage.mjs";
+import errorMessage from "../ui/common/displayMessage.mjs";
 
 // handles the login of profiles
 

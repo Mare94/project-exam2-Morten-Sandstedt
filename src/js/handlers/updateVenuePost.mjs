@@ -1,4 +1,4 @@
-import { readVenue, updateVenue } from "../api/venue/index.js";
+import { readVenue, updateVenue } from "../api/venue/index.mjs";
 
 // handles the edit of venues
 

@@ -1,4 +1,4 @@
-import { readBooking, updateBooking } from "../api/bookings/index.js";
+import { readBooking, updateBooking } from "../api/bookings/index.mjs";
 
 // handles the edit of bookings
 

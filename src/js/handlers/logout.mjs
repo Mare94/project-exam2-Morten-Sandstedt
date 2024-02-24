@@ -1,4 +1,4 @@
-import * as storage from "../storage/storage.js";
+import * as storage from "../storage/storage.mjs";
 
 export function SetLogoutFormListener() {
     const logoutBtn = document.querySelector("#logout");

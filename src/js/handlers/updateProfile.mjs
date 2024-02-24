@@ -1,6 +1,6 @@
-import { updateProfile } from "../api/profiles/index.js";
-import { readProfile } from "../api/profiles/index.js";
-import { load } from "../storage/storage";
+import { updateProfile } from "../api/profiles/index.mjs";
+import { readProfile } from "../api/profiles/index.mjs";
+import { load } from "../storage/storage.mjs";
 
 
 

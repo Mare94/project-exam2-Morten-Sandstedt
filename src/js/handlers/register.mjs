@@ -1,5 +1,5 @@
-import { register } from "../api/auth/register";
-import errorMessage from "../ui/common/displayMessage";
+import { register } from "../api/auth/register.mjs";
+import errorMessage from "../ui/common/displayMessage.mjs";
 
 // handles the registration of profiles
 
