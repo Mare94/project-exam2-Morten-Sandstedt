@@ -6,13 +6,8 @@ const action = "/venues"
 
 const url = BASE_API_URL + action;
 
-const apiUrl = "https://v2.api.noroff.dev/holidaze/venues";
 
-const corsEnabledUrl = "https://noroffcors.onrender.com/" + apiUrl
 
-console.log()
-console.log()
-console.log()
 console.log()
 
 async function getVenueData() {
