@@ -53,6 +53,8 @@ function createHtml(data){
                     <p class="card-text">Location: ${data.data.location.address} ${data.data.location.city} ${data.data.location.country}</p>
                     
                     </div>
+
+                    
                 </div>
             </div>
 
