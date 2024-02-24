@@ -1,18 +1,19 @@
-import { BASE_API_URL } from "../api/constant.mjs";
+
 
 const venueDetail = document.querySelector(".venue-detail");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-const urlId = params.get("id");
+const Id = params.get("id");
 
+import { BASE_API_URL } from "../api/constant.mjs";
 
 const action = "/venues/";
 const url = BASE_API_URL + action;
 
 console.log();
 
-const urlById = BASE_API_URL + action + "a3f57758-a5fd-4b11-a738-9bc328545a5f";
+const urlById = BASE_API_URL + action + Id;
 
 console.log(urlById);
 
@@ -20,38 +21,12 @@ async function getVenueDetail() {
 
     
 
-        const response = await fetch(url);
+        const response = await fetch(urlById);
         const data = await response.json();
 
         console.log(data);
 
-        for(let i = 0; i < 1; i++) {
-
-            console.log(data)
-
-            venueDetail.innerHTML += `
-            
-            <div class="text-center">
-                <div class="card">
-                    <img src="${data.data[i].media[i].url}" class="card-img-top" alt="${data.data[i].media[i].alt}">
-                    <div class="card-body">
-                    <h5 class="card-title">${data.data[i].name}</h5>
-                    <p class="card-text">Price: ${data.data[i].price}</p>
-                    <p class="card-text">Rating: ${data.data[i].rating}</p>
-                    <p class="card-text">Max guests: ${data.data[i].maxGuests}</p>
-                    <p class="card-text">Location: ${data.data[i].location.address} ${data.data[i].location.city} ${data.data[i].location.country}</p>
-                    <p class="card-text">${data.data[i].description}</p>
-                    
-                    </div>
-                </div>
-            </div>
-
-
-
-            `
-
-
-        }
+        createHtml(data);
 
     
 
@@ -59,3 +34,31 @@ async function getVenueDetail() {
 
 getVenueDetail()
 
+
+function createHtml(data){
+
+    venueDetail.innerHTML += `
+            
+            <div class="text-center">
+                <div class="card">
+                    <h5 class="card-title">${data.data.name}</h5>
+                    <img src="${data.data.media[0].url}" class="card-img-top" alt="${data.data.media[0].alt}">
+                    <div class="card-body">
+                    
+                    <p class="card-text">Price: ${data.data.price}</p>
+                    <p class="card-text">Rating: ${data.data.rating}</p>
+                    <p class="card-text">Max guests: ${data.data.maxGuests}</p>
+                    <p class="card-text">Location: ${data.data.location.address} ${data.data.location.city} ${data.data.location.country}</p>
+                    <p class="card-text">${data.data.description}</p>
+                    
+                    </div>
+                </div>
+            </div>
+
+
+
+            `;
+
+
+
+};

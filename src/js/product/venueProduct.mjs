@@ -34,7 +34,7 @@ async function getVenueData() {
                     <p class="card-text">Price: ${data.data[i].price}</p>
                     <p class="card-text">Rating: ${data.data[i].rating}</p>
                     <p class="card-text">${data.data[i].description}</p>
-                    <a href="product/product.html?${data.data[i].id}" class="btn btn-primary">See more</a>
+                    <a href="product/product.html?id=${data.data[i].id}" class="btn btn-primary">See more</a>
                     </div>
                 </div>
             </div>
