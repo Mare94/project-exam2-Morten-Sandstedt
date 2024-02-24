@@ -1,5 +1,5 @@
-import { authToken } from "../authToken.js";
-import { BASE_API_URL } from "../constant.js";
+import { authToken } from "../authToken.mjs";
+import { BASE_API_URL } from "../constant.mjs";
 
 const action = "/venues"
 

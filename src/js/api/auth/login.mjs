@@ -1,4 +1,4 @@
-import { BASE_API_URL } from "../constant";
+import { BASE_API_URL } from "../constant.mjs";
 
 const path = "/auth/login";
 const method = "post";
