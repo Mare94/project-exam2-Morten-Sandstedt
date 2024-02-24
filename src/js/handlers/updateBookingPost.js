@@ -3,7 +3,7 @@ import { readBooking, updateBooking } from "../api/bookings/index.js";
 // handles the edit of bookings
 
 export async function SetUpdateVenueFormListener() {
-    const form = document.querySelector("#updatePost");
+    const form = document.querySelector("#updateBooking");
 
     const url = new URL(location.href);
     const id = url.searchParams.get("id");
