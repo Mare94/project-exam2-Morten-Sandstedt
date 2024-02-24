@@ -41,7 +41,7 @@ function createHtml(data){
             
             <div class="text-center">
                 <div class="card">
-                    <h5 class="card-title">${data.data.name}</h5>
+                    <h3 class="card-title">${data.data.name}</h3>
                     <img src="${data.data.media[0].url}" class="card-img-top" alt="${data.data.media[0].alt}">
                     <div class="card-body">
                     
