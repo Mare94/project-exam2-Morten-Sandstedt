@@ -3,7 +3,7 @@ import { createPost } from "../api/venue/index.js";
 // handles the creation of posts
 
 export function SetCreateVenueFormListener() {
-    const form = document.querySelector("#createPost");
+    const form = document.querySelector("#createVenue");
 
     form.addEventListener("submit", (event) =>{
         event.preventDefault()

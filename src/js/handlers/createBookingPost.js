@@ -3,7 +3,7 @@ import { createPost } from "../api/bookings/index.js";
 // handles the creation of posts
 
 export function SetCreateBookingFormListener() {
-    const form = document.querySelector("#createVenue");
+    const form = document.querySelector("#createBooking");
 
     form.addEventListener("submit", (event) =>{
         event.preventDefault()
