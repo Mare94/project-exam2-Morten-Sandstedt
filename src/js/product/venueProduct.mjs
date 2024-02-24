@@ -6,21 +6,27 @@ const action = "/venues"
 
 const url = BASE_API_URL + action;
 
+const apiUrl = "https://v2.api.noroff.dev/holidaze/venues";
+
+const corsEnabledUrl = "https://noroffcors.onrender.com/" + apiUrl
+
+console.log(corsEnabledUrl)
+
 async function getVenueData() {
 
     try {
 
-        const response = await fetch(url);
+        const response = await fetch();
 
         const data = await response.json();
 
         console.log(data);
 
-        for(let i = 0; i < 20; i++) {
+        for(let i = 0; i < 8; i++) {
 
             venueContainer.innerHTML += `
             
-            <div class="">
+            <div class="card">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
@@ -46,4 +52,4 @@ async function getVenueData() {
 
 }
 
-getVenueData();
+//getVenueData();
