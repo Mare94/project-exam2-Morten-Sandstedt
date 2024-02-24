@@ -49,32 +49,48 @@
     </nav>
 
     <main>
-        <div href="/" class="col-12">
-            
-        </div>
-
-        <div class="col-6 d-grid gap-2 d-dm-block profile">
-                <a href="/profile/edit/"><button class="btn btn-primary">Edit Profile</button></a>
-        </div>
-
-        <div class="col-6 d-grid gap-2 d-dm-block">
-            <a href="/profile/edit/"><button class="btn btn-primary">Edit Bookings</button></a>
-        </div>
-
-        <div class="col-6 d-grid gap-2 d-dm-block">
-            <a href="/profile/edit/"><button class="btn btn-primary">Edit Venues</button></a>
-        </div>
-
+        
         <div class="container-fluid">
-                
-             <div class="row justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
 
-         
+                    <form id="updateProfile">
 
-             </div>
+                        <div class="form-group mb-3">
+                            <label for="">Name</label>
+                            <input class="form-control" type="text" disabled name="name">
+
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="">Email</label>
+                            <input class="form-control" type="email" disabled name="email">
+
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="">Banner</label>
+                            <input class="form-control" type="url" name="banner">
+
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="">Avatar</label>
+                            <input class="form-control" type="url" name="avatar">
+
+                        </div>
+
+                        
+                        <button class="btn btn-success">Update Profile</button>
+
+
+                    </form>
+                    
+                </div>
+
+            </div>
 
         </div>
-
         
 
         
