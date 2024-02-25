@@ -14,6 +14,7 @@ main {
 .navbar {
     background-color: blueviolet;
     height: 7rem;
+    font-weight: 650;
 }
 
 .nav-color {
