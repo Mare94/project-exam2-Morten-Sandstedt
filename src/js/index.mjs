@@ -2,7 +2,7 @@ import * as listeners from "./handlers/index.mjs";
 import * as venueAction from "./api/venue/index.mjs";
 import * as bookingAction from "./api/bookings/index.mjs";
 
-import * as SetUpdateVenueFormListener from "./handlers/updateBookingPost.mjs";
+
 
 const path = location.pathname;
 
