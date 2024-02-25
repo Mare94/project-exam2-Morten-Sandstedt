@@ -2,7 +2,7 @@ import { readBooking, updateBooking } from "../api/bookings/index.mjs";
 
 // handles the edit of bookings
 
-export async function SetUpdateVenueFormListener() {
+export async function SetUpdateBookingFormListener() {
     const form = document.querySelector("#updateBooking");
 
     const url = new URL(location.href);

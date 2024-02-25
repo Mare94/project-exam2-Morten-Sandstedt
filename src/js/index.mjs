@@ -17,7 +17,7 @@ if(path === '/profile/login/') {
 } else if(path === '/product/edit/') {
     listeners.SetUpdateVenueFormListener()
 } else if(path === '/product/edit/') {
-    listeners.SetUpdateVenueFormListener()
+    listeners.SetUpdateBookingFormListener()
 } else if(path === '/profile/edit/'){
     listeners.SetUpdateProfileFormListener()
 }
